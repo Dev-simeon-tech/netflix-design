@@ -6,11 +6,19 @@ body{
     background-attachment: fixed;
     background-position: center;
     font-family: 'Lato', sans-serif;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
 img{
     float: left;
-    width: 150px;
-    margin: 20px;
+    width: 180px;
+    padding: 2rem 3rem;
 } 
 @media(max-width:768px){
     img{
@@ -21,156 +29,113 @@ img{
     img{
         width: 100px;
     }
-}  
-
-.main{
-    
-    background-color: rgba(3, 2, 2, 0.85);
+} 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     color: white;
+
+} 
+.sign-page{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
-    text-align: start;
     justify-content: center;
-    margin-right: 430px;
-    margin-left: 430px;
-}
-
-@media(max-width:1300px){
-    .main{
-        margin-right: 350px;
-        margin-left: 350px;
-    }
-}
-@media(max-width:986px){
-    .main{
-        margin-right: 300px;
-        margin-left: 300px;
-    }
-}
-@media(max-width:769px){
-    .main{
-        margin-right: 200px;
-        margin-left: 200px;
-    }
-}
-@media(max-width:598px){
-    .main{
-        margin-right: 150px;
-        margin-left: 150px;
-    }
-}
-@media(max-width:414px){
-    .main{
-        margin-right: 100px;
-        margin-left: 100px;
-    }
-}
-h1{
-    display: inline;
-    margin-right: 230px;
-    margin-top: 50px;
-    
-}
-@media(max-width:768px){
-    h1{
-        font-size: 25px;
-    }
-}
-@media(max-width:600px){
-    h1{
-        font-size: 20px;
-    }
-}
-input{
-    margin: 10px 30px;
-    width: 290px;
-    height: 10px;
-    padding: 20px;
-    background-color:rgb(50, 49, 49);
+    gap: 2rem;
+    padding: 8rem 4rem;
+    background: rgba(0,0,0,0.8) ;
     border-radius: 5px;
-    color: white;
+    height: 50vh;
+    position: relative;
+    right: 130px;
+    top: 60px;
 }
-@media(max-width:768px){
-    input{
-        margin: 8px 25px;
-        width: 150px;
-        padding: 15px; 
-    }
+.sign-page h1{
+    position: relative;
+    left: -110%;
+    font-size: 35px;
 }
-@media(max-width:589){
-    input{
-        margin: 5px 20px;
-        width: 100px;
-        padding: 10px; 
-    }
+.sign-page input{
+    width: 280px;
+    border: 0;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: 500;
+    height: 30px;
+    line-height: 50px;
+    padding: 10px 25px ;
+    background: #333;
+    font-size: 15px;
 }
-:placeholder-shown{
-    font-size: 20px;
-    color: white;
-   
+.sign-page input:focus{
+    outline: 0;
 }
-@media(max-width:768px){
-    :placeholder-shown{
-        font-size: 15px;
-        color: white;
-        
+.sign-page button{
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 24px 0 12px;
+    padding: 15px 35px;
+    background-color: #e50914;
+    color:white;
+    width: 330px;
+    cursor: pointer;
+    border: 0;  
 }
+.input-2{
+    margin-top: -10px;
 }
-@media(max-width:600px){
-    :placeholder-shown{
-        font-size: 10px;
-        color: white;
-        
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    gap: 10rem;
+    color: #b3b3b3;
+    margin-top: -50px;
 }
+#check{
+    width: 15px;
+    position: relative;
+    top: 10px;
+    padding-right: 5px;
+    color: #b3b3b3;
+    accent-color:#b3b3b3;
 }
-a{
-    background-color: red;
-    margin: 30px 30px;
-    width: 300px;
-    padding: 20px;
+.sign-link{
     text-decoration: none;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
+    color: #b3b3b3;
+    position: relative;
+    top: 10px;
 }
-@media(max-width:768px){
-    a{
-        width: 200px;
-        padding: 18px;  
-    }
+.bottom-2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #b3b3b3;
 }
-@media(max-width:600px){
-    a{
-        width: 150px;
-        padding: 15px;  
-    }
+.bottom-2 p{
+    font-size: 14px;
 }
-@media(max-width:434px){
-    a{
-        width: 100px;
-        padding: 10px;  
-    }
+.bottom-2 h3{
+    font-weight: 300;
 }
-p{
-    margin-left: 0px;
-    margin-right: 50px;
-    text-align: start;
+.text-spec{
+    color: blue;
+    cursor: pointer;
 }
-@media(max-width:768px){
-    p{
-        font-size: 8px;
-    }
+.text-spec:hover{
+    text-decoration: underline;
 }
-    
-.checkbox{
-   display: flex;
-   flex-direction: row;
-   justify-content: left;
-   margin: 10px;
-   align-items: flex-start;
-
+.bottom-2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.bottom-2 a:hover{
+    text-decoration: underline;
 }
 
-
+ 

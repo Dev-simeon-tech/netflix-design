@@ -7,34 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <title>Netflix sign in</title>
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <img  src="netflix-3.svg" alt="netflix logo">
-    <br><br>
-    <div class="main">
-    
-            <h1>Sign in</h1>
-        <input type="text" placeholder=" Email or phone number">
-        <input type="password" placeholder="Password">
-        <a href="#"><b>Sign in</b> </a>
-        <p>Lorem ipsum dolor sit amet consectetur . <br>
-             Optio dignissimos id qui facilis ad,<br>
-             fugiat praesentium <br>
-            
-            </p>
-        
-          
-               <input id="checkbox" type="checkbox" name="box" checked>
-               
-            <label id="box" for="box">Remember me</label>
-    
-    </div>
-  
-       
-    
+     <main>
+        <div class="sign-page">
+            <div>
+                <h1>Sign in</h1>
+            </div>
+            <div>
+                <input class="input-1" type="email" placeholder="Email or phone number" required>
+            </div>
+            <div>
+                <input class="input-2" type="password" placeholder="Password" required>
+            </div>
+            <div >
+                <button>Sign in</button>
+            </div>
+            <div class="bottom">
+                <div>
+                    <input type="checkbox" id="check" checked>
+                    <label for="check">Remember me</label>
+                </div>
+                <div>
+                    <label ><a class="sign-link" href="#">Need help?</a></label>
+                </div>
+            </div>
+            <div class="bottom-2">
+                <div>
+                    <h3>New to Netflix?<a href="#">Sign up now</a></h3>
+                </div>
+                <div>
+                    <p>This page is protected by Google reCAPTCHA to <br>
+                         ensure you're not a bot. <span class="text-spec">Learn more.</span> </p>
+                </div>
+            </div>
+        </div>
+     </main>
+              
    
-    
 </body>
 </html>
