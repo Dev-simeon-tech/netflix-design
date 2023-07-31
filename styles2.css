@@ -6,136 +6,99 @@ body{
     background-attachment: fixed;
     background-position: center;
     font-family: 'Lato', sans-serif;
-    margin: 0%;
+    margin: 0;
     padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
+}
+a{
+    cursor: pointer;
 }
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
-img{
-    float: left;
-    width: 180px;
-    padding: 2rem 3rem;
-} 
-@media(max-width:768px){
-    img{
-        width: 120px;
-    }
+.head{
+    padding: 2rem;
 }
-@media(max-width:600px){
-    img{
-        width: 100px;
-    }
-} 
-main{
+.logo{
+    width: 250px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 40vh; */
+    width: 100vw;
+    border: 4px solid blue;
+    
+}
+.container form{
+    background: rgba(0,0,0,0.75);
+    padding: 4rem 4rem 8rem 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    color: white;
-
-} 
-.sign-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 8rem 4rem;
-    background: rgba(0,0,0,0.8) ;
-    border-radius: 5px;
-    height: 50vh;
-    position: relative;
-    right: 130px;
-    top: 60px;
+    border: 2px solid green;
+    width: 400px;
 }
-.sign-page h1{
-    position: relative;
-    left: -110%;
-    font-size: 35px;
-}
-.sign-page input{
-    width: 280px;
-    border: 0;
-    border-radius: 4px;
-    color: #ffff;
-    font-weight: 500;
-    height: 30px;
-    line-height: 50px;
-    padding: 10px 25px ;
-    background: #333;
-    font-size: 15px;
-}
-.sign-page input:focus{
-    outline: 0;
-}
-.sign-page button{
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 24px 0 12px;
-    padding: 15px 35px;
-    background-color: #e50914;
-    color:white;
-    width: 330px;
-    cursor: pointer;
-    border: 0;  
-}
-.input-2{
-    margin-top: -10px;
-}
-.bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: small;
-    gap: 10rem;
-    color: #b3b3b3;
-    margin-top: -50px;
-}
-#check{
-    width: 15px;
-    position: relative;
-    top: 10px;
-    padding-right: 5px;
-    color: #b3b3b3;
-    accent-color:#b3b3b3;
-}
-.sign-link{
-    text-decoration: none;
-    color: #b3b3b3;
-    position: relative;
-    top: 10px;
-}
-.bottom-2{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    color: #b3b3b3;
-}
-.bottom-2 p{
-    font-size: 14px;
-}
-.bottom-2 h3{
-    font-weight: 300;
-}
-.text-spec{
-    color: blue;
-    cursor: pointer;
-}
-.text-spec:hover{
-    text-decoration: underline;
-}
-.bottom-2 a{
-    text-decoration: none;
+.head-tx{
     color: #fff;
-}
-.bottom-2 a:hover{
-    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom: 2rem;
 }
 
- 
+.input-box{
+    margin: 15px 0;
+    position: relative;
+
+    /* border: 5px solid blue; */
+    width: 340px ;
+
+}
+.sign-inner{
+
+}
+.input-box input{
+    width:100% ;
+    padding: 18px 20px;
+    background: #333;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    /* position: absolute; */
+    /* border: 2px solid yellow; */
+}
+.sign-btn{
+    width: 100%;
+    margin-top: 30px;
+    background: #e50914;
+    margin: 24px 0 12px;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media(max-width:769px){
+    body{
+        background: black;
+    }
+    .container form{
+        width: 100vw;
+        padding: 2rem;
+    }
+    .sign-inner{
+        width: 100%;
+    }
+    .input-box input{
+       width: 100%;
+    }
+}
